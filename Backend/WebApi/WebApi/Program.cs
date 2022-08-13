@@ -2,7 +2,7 @@ using Microsoft.EntityFrameworkCore;
 using WebApi.Data;
 using WebApi.Extensions;
 using WebApi.Models.Settings;
-
+using WebApi.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,6 +10,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddScoped<ICountryService, CountryService>();
 
 #region Database
 builder.Services.AddDbContext<ApplicationDbContext>(x =>

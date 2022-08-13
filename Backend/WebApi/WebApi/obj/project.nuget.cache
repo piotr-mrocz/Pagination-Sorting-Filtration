@@ -1,13 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "BUENQG29Dmckv/a/LVO2PQNWCrKdEx1IWN05tQ+CrRRRwx73xx4oycVqtCoLpomm4UEIxXq53sPEiciqfF6eqw==",
+  "dgSpecHash": "Yd7ytgf+JwXcwOC7d0p2ZkydOr6IndPEDSmxMsCxqC/m+FA89MPXoD2WznfLBXomHSgSETZP7EwHOLQn4JXlng==",
   "success": true,
   "projectFilePath": "D:\\Nauka\\Repos\\Pagination-Sorting-Filtration\\Backend\\WebApi\\WebApi\\WebApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mrocz\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
     "C:\\Users\\mrocz\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
-    "C:\\Users\\mrocz\\.nuget\\packages\\mediatr\\10.0.1\\mediatr.10.0.1.nupkg.sha512",
-    "C:\\Users\\mrocz\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
     "C:\\Users\\mrocz\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\mrocz\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",
     "C:\\Users\\mrocz\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.1.1\\microsoft.data.sqlclient.sni.runtime.2.1.1.nupkg.sha512",

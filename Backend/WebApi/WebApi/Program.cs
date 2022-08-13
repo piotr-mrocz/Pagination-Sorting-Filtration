@@ -16,6 +16,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(x =>
     x.UseSqlServer(builder.Configuration.GetConnectionString(nameof(ConnectionString.LearningDatabase))));
 
 builder.Services.AddScoped<IApplicationDbContext, ApplicationDbContext>();
+builder.Services.AddScoped<DatabaseSeeder>();
 #endregion Database
 
 var app = builder.Build();

@@ -7,7 +7,7 @@ public class ApplicationDbContext : DbContext, IApplicationDbContext
 {
     public ApplicationDbContext(DbContextOptions options) : base(options) { }
 
-    DbSet<Country> Countries { get; set; }
+    DbSet<Country> Countries { get; set; } = null!;
 
     protected override void OnModelCreating(ModelBuilder builder)
     {

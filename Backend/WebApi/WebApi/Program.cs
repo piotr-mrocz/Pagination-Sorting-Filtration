@@ -30,5 +30,6 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.RegisterEndpoints();
+DatabaseSeederExtension.SeedDatabase(app.Services.CreateScope());
 
 app.Run();

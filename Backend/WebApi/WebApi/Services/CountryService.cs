@@ -13,6 +13,6 @@ public class CountryService : ICountryService
         _dbContext = dbContext;
     }
 
-    public async Task<List<Country>> GetAllCountries()
-        => await _dbContext.Countries.ToListAsync();
+    public List<Country> GetAllCountries()
+        => _dbContext.Countries.ToList();
 }

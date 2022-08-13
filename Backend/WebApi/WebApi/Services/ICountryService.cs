@@ -4,5 +4,5 @@ namespace WebApi.Services;
 
 public interface ICountryService
 {
-    Task<List<Country>> GetAllCountries();
+    List<Country> GetAllCountries();
 }

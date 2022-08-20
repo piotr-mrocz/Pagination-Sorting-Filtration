@@ -14,5 +14,8 @@ public class CountryService : ICountryService
     }
 
     public List<Country> GetAllCountries()
-        => _dbContext.Countries.ToList();
+    {
+        var countriesList = _dbContext.Countries.ToList();
+        return countriesList;
+    }
 }

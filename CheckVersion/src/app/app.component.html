@@ -1,0 +1,32 @@
+<h1>Sortowanie z paczką Sieve</h1>
+
+<table style="color: white">
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Imię</th>
+      <th>Kod</th>
+      <th>Stolica</th>
+      <th>Kontynent</th>
+      <th>Populacja</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><input id="id" /></td>
+      <td><input id="countryName" /></td>
+      <td><input id="countryCode" /></td>
+      <td><input id="capitalCity" /></td>
+      <td><input id="continent" /></td>
+      <td><input id="population" /></td>
+    </tr>
+    <tr *ngFor="let country of countries">
+      <td>{{country.id}}</td>
+      <td>{{country.countryName}}</td>
+      <td>{{country.countryCode}}</td>
+      <td>{{country.capitalCity}}</td>
+      <td>{{country.continent}}</td>
+      <td>{{country.population}}</td>
+    </tr>
+  </tbody>
+</table>

@@ -753,6 +753,20 @@
           }
         }
       },
+      "Sieve/2.5.5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CSharp": "4.4.1",
+          "Microsoft.Extensions.Options": "2.0.0",
+          "System.ComponentModel.Annotations": "4.4.1"
+        },
+        "compile": {
+          "lib/netstandard2.1/Sieve.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/Sieve.dll": {}
+        }
+      },
       "Swashbuckle.AspNetCore/6.2.3": {
         "type": "package",
         "dependencies": {
@@ -3186,6 +3200,19 @@
         "runtimes/win-x86/native/sni.dll",
         "useSharedDesignerContext.txt",
         "version.txt"
+      ]
+    },
+    "Sieve/2.5.5": {
+      "sha512": "JNT/m73vu7lzUfi+DNGVRptWYDJTRhS7BgVwqcvlEq5sAhrMmiFZJxM3LPagjsJbcuscMrmMfLgLvhyDNGv/Bg==",
+      "type": "package",
+      "path": "sieve/2.5.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.1/Sieve.dll",
+        "lib/netstandard2.1/Sieve.pdb",
+        "sieve.2.5.5.nupkg.sha512",
+        "sieve.nuspec"
       ]
     },
     "Swashbuckle.AspNetCore/6.2.3": {
@@ -6875,6 +6902,7 @@
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.8",
       "Microsoft.EntityFrameworkCore.SqlServer.Design >= 1.1.6",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.8",
+      "Sieve >= 2.5.5",
       "Swashbuckle.AspNetCore >= 6.2.3"
     ]
   },
@@ -6949,6 +6977,10 @@
             "suppressParent": "All",
             "target": "Package",
             "version": "[6.0.8, )"
+          },
+          "Sieve": {
+            "target": "Package",
+            "version": "[2.5.5, )"
           },
           "Swashbuckle.AspNetCore": {
             "target": "Package",

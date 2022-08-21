@@ -70,3 +70,4 @@ D:\Nauka\Repos\Pagination-Sorting-Filtration\Backend\WebApi\WebApi\bin\Debug\net
 D:\Nauka\Repos\Pagination-Sorting-Filtration\Backend\WebApi\WebApi\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
 D:\Nauka\Repos\Pagination-Sorting-Filtration\Backend\WebApi\WebApi\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.Design.dll
 D:\Nauka\Repos\Pagination-Sorting-Filtration\Backend\WebApi\WebApi\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.Design.dll
+D:\Nauka\Repos\Pagination-Sorting-Filtration\Backend\WebApi\WebApi\bin\Debug\net6.0\Sieve.dll

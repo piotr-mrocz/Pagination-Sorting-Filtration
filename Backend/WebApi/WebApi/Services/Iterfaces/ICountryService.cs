@@ -4,9 +4,9 @@ using WebApi.Data;
 using WebApi.Models.Entities;
 using WebApi.Models.Responses;
 
-namespace WebApi.Services;
+namespace WebApi.Services.Iterfaces;
 
 public interface ICountryService
 {
-    Task<PagedResult<Country>> GetAllCountries(SieveModel query, ISieveProcessor sieveProcessor);
+    Task<PagedResult<Country>> GetAllCountries(SieveModel query);
 }

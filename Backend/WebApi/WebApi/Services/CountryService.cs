@@ -29,7 +29,7 @@ public class CountryService : ICountryService
         var countriesList = _dbContext.Countries.AsQueryable();
 
         var countryListPage = await _sieveProcessor.Apply(query, countriesList).ToListAsync();
-        var total = await _sieveProcessor.Apply(query, countriesList, applyFiltering: false, applySorting: false).CountAsync();
+        var total = await _sieveProcessor.Apply(query, countriesList, applyPagination: false, applySorting: false).CountAsync();
 
         var pageSize = query.PageSize.HasValue ? query.PageSize.Value : _configuration.GetDefaultPageSize();
         var page = query.Page.HasValue ? query.Page.Value : 1;

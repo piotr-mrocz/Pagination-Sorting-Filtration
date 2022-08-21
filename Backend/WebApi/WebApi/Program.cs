@@ -1,8 +1,10 @@
 using Microsoft.EntityFrameworkCore;
+using Sieve.Services;
 using WebApi.Data;
 using WebApi.Extensions;
 using WebApi.Models.Settings;
 using WebApi.Services;
+using WebApi.Sieve;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,6 +14,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddControllers();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<ICountryService, CountryService>();
+builder.Services.AddScoped<ISieveProcessor, AplicationSieveProcessor>();
 
 #region Database
 builder.Services.AddDbContext<ApplicationDbContext>(x =>

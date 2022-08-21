@@ -1,5 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Sieve.Models;
+using Sieve.Services;
+using WebApi.Data;
 using WebApi.Models.Entities;
+using WebApi.Models.Responses;
 using WebApi.Services;
 
 namespace WebApi.Controllers;
@@ -15,7 +19,7 @@ public class CountryController : ControllerBase
         _countryService = countryService;
     }
 
-    [HttpGet]
-    public List<Country> GetAllCountries()
-        => _countryService.GetAllCountries();
+    [HttpPost]
+    public async Task<PagedResult<Country>> GetAllCountries([FromBody] SieveModel query, ISieveProcessor sieveProcessor)
+        => await _countryService.GetAllCountries(query, sieveProcessor);
 }

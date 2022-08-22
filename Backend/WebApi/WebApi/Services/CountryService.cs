@@ -33,8 +33,10 @@ public class CountryService : ICountryService
 
         var pageSize = query.PageSize.HasValue ? query.PageSize.Value : _configuration.GetDefaultPageSize();
         var page = query.Page.HasValue ? query.Page.Value : 1;
-
-        var result = new PagedResult<Country>(total, pageSize, page, countryListPage);
+       
+        var result = string.IsNullOrEmpty(query.Filters)
+            ? new PagedResult<Country>(total, pageSize, page, countriesList.ToList())
+            : new PagedResult<Country>(total, pageSize, page, countryListPage);
 
         return result;
     }

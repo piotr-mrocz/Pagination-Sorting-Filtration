@@ -1,5 +1,5 @@
 <h1>Sortowanie z paczką Sieve</h1>
-<input id="search" type="button" value="Wyszukaj" />
+
 <table *ngIf="countries.itemsList != undefined && countries.itemsList.length > 0" style="color: white">
   <thead>
     <tr>
@@ -13,12 +13,12 @@
   </thead>
   <tbody>
     <tr>
-      <td><input id="id" /></td>
-      <td><input id="countryName" type="text" [(ngModel)]="countryNameSearch" (keypress)="onSearchChange($event)" /></td>
-      <td><input id="countryCode" /></td>
-      <td><input id="capitalCity" /></td>
-      <td><input id="continent" /></td>
-      <td><input id="population" /></td>
+      <td><input id="id" type="text" [(ngModel)]="countryIdSearch" (keypress)="onSearchIdChange($event)" /></td>
+      <td><input id="countryName" type="text" [(ngModel)]="countryNameSearch" (keypress)="onSearchNameChange($event)" /></td>
+      <td><input id="countryCode" type="text" [(ngModel)]="countryCodeSearch" (keypress)="onSearchCodeChange($event)" /></td>
+      <td><input id="capitalCity" type="text" [(ngModel)]="capitalCitySearch" (keypress)="onSearchCapitalChange($event)" /></td>
+      <td><input id="continent" type="text" [(ngModel)]="continentSearch" (keypress)="onSearchContinentChange($event)" /></td>
+      <td><input id="population" type="text" [(ngModel)]="populationSearch" (keypress)="onSearchPopulationChange($event)" /></td>
     </tr>
     <tr *ngFor="let country of countries.itemsList">
       <td>{{country.id}}</td>
